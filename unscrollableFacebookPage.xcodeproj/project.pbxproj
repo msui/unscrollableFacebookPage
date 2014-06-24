@@ -19,6 +19,8 @@
 		1A27D9F2195847F400C63660 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A27D9DA195847F400C63660 /* UIKit.framework */; };
 		1A27D9FA195847F400C63660 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A27D9F8195847F400C63660 /* InfoPlist.strings */; };
 		1A27D9FC195847F400C63660 /* unscrollableFacebookPageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A27D9FB195847F400C63660 /* unscrollableFacebookPageTests.m */; };
+		1A27DA081958486500C63660 /* FBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A27DA061958486500C63660 /* FBViewController.m */; };
+		1A27DA091958486500C63660 /* FBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A27DA071958486500C63660 /* FBViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		1A27D9F7195847F400C63660 /* unscrollableFacebookPageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "unscrollableFacebookPageTests-Info.plist"; sourceTree = "<group>"; };
 		1A27D9F9195847F400C63660 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A27D9FB195847F400C63660 /* unscrollableFacebookPageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = unscrollableFacebookPageTests.m; sourceTree = "<group>"; };
+		1A27DA051958486500C63660 /* FBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBViewController.h; path = ../FBViewController.h; sourceTree = "<group>"; };
+		1A27DA061958486500C63660 /* FBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBViewController.m; path = ../FBViewController.m; sourceTree = "<group>"; };
+		1A27DA071958486500C63660 /* FBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FBViewController.xib; path = ../FBViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +115,7 @@
 				1A27D9E5195847F400C63660 /* AppDelegate.h */,
 				1A27D9E6195847F400C63660 /* AppDelegate.m */,
 				1A27D9E8195847F400C63660 /* Images.xcassets */,
+				1A27DA0A19584A3300C63660 /* ViewControllers */,
 				1A27D9DD195847F400C63660 /* Supporting Files */,
 			);
 			path = unscrollableFacebookPage;
@@ -142,6 +148,16 @@
 				1A27D9F8195847F400C63660 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A27DA0A19584A3300C63660 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1A27DA051958486500C63660 /* FBViewController.h */,
+				1A27DA061958486500C63660 /* FBViewController.m */,
+				1A27DA071958486500C63660 /* FBViewController.xib */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A27D9E1195847F400C63660 /* InfoPlist.strings in Resources */,
+				1A27DA091958486500C63660 /* FBViewController.xib in Resources */,
 				1A27D9E9195847F400C63660 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +258,7 @@
 			files = (
 				1A27D9E7195847F400C63660 /* AppDelegate.m in Sources */,
 				1A27D9E3195847F400C63660 /* main.m in Sources */,
+				1A27DA081958486500C63660 /* FBViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +380,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "unscrollableFacebookPage/unscrollableFacebookPage-Prefix.pch";
 				INFOPLIST_FILE = "unscrollableFacebookPage/unscrollableFacebookPage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -375,6 +394,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "unscrollableFacebookPage/unscrollableFacebookPage-Prefix.pch";
 				INFOPLIST_FILE = "unscrollableFacebookPage/unscrollableFacebookPage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -439,6 +459,7 @@
 				1A27DA01195847F400C63660 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A27DA02195847F400C63660 /* Build configuration list for PBXNativeTarget "unscrollableFacebookPageTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +468,7 @@
 				1A27DA04195847F400C63660 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

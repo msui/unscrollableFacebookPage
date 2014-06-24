@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FBViewController.h"
 
 @implementation AppDelegate
 
@@ -14,6 +15,12 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    FBViewController *vc = [[FBViewController alloc] init];
+    //UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
+    
+    self.window.rootViewController = vc;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
